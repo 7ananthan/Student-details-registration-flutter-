@@ -1,4 +1,4 @@
-class CourseData {
+class StudentData {
     String email;
     String name;
     String parentName;
@@ -6,10 +6,10 @@ class CourseData {
     String phone;
     String place;
 
-    CourseData({this.email, this.name, this.parentName, this.parentPhn, this.phone, this.place});
+    StudentData({this.email, this.name, this.parentName, this.parentPhn, this.phone, this.place});
 
-    factory CourseData.fromJson(Map<String, dynamic> json) {
-        return CourseData(
+    factory StudentData.fromJson(Map<String, dynamic> json) {
+        return StudentData(
             email: json['email'],
             name: json['name'],
             parentName: json['parentName'],
